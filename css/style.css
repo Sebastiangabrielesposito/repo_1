@@ -525,14 +525,12 @@ section a{
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
-
 }
 
 .contacto__links{
 	padding-bottom: 25px;
  	width: auto;
  	margin-bottom: 30px;
-
 }
 
 /* end contacto html*/
@@ -1033,3 +1031,44 @@ footer a{
 }
 
 /*end @media contacto.html*/
+
+/*start animaciones*/
+
+.scale:hover{
+	transform: scale(1.2);
+}
+
+.skew:hover{
+	transform: skew(15deg);
+}
+
+.rotate:hover{
+	transform:rotateZ(-360deg);
+	cursor: pointer;
+	transition: transform 1s;
+}
+
+@keyframes opacidad{
+	from{opacity: 0}
+	to{opacity: 1}
+}
+
+.article__todos__h2{
+	animation-name: opacidad;
+	animation-duration: 4s;
+}
+.article__metodos{
+	animation-name: opacidad;
+	animation-duration: 7s;
+}
+
+.index__foto{
+	animation-name: opacidad;
+	animation-duration: 3s;
+}
+
+.transition:hover{
+	color:blueviolet;
+	background: linear-gradient(blue,black);
+	transition: all 1s;
+}
