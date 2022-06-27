@@ -19,7 +19,7 @@ body{
 	width:auto;
   	padding: 10px;
   	margin: auto;
-
+	/*background: linear-gradient(black,#26A1DA);*/
 }
 
 /* start nav*/
@@ -498,7 +498,7 @@ section a{
 
 .label_contacto{
 	font-size: 25px;
-   color: #B0D8E8;
+   color: white;
    padding: 10px;
    margin-bottom: 15px;
    margin-top: 30px;
@@ -512,12 +512,12 @@ section a{
 }
 
 .contacto__mensaje{
- 	font-size: 2.5rem;
+ 	font-size: 3.8rem;
  	color: white;
 	line-height: 4.4rem;
 	font-weight: 400;
  	padding: 20px;
- 	margin-bottom: 25px;
+ 	margin-bottom: 45px;
  	
 }
 
@@ -1068,7 +1068,24 @@ footer a{
 }
 
 .transition:hover{
-	color:blueviolet;
+	color:deeppink;
 	background: linear-gradient(blue,black);
 	transition: all 1s;
 }
+
+.transition{
+	background: #B0D8E8;
+	color:white ;
+}
+
+.contacto__mensaje{
+	animation-name: opacidad;
+	animation-duration: 3s;
+	animation-timing-function : ease-in-out;
+	color: white;
+}
+
+/*.info{/*
+	color: #1EA9D7;
+}*/
+
