@@ -14,14 +14,14 @@ html{
 
 body{
 	text-align: center;
-	background-image: url(../img/fondoazul.png);
+	/*background-image: url(../img/fondoazul.png);*/
 	background-attachment: fixed;	
 	width:auto;
   	padding: 10px;
   	margin: auto;
-	/*background: linear-gradient(black,#26A1DA);*/
+	background: linear-gradient(to right , black,#056D98);
 }
-
+        
 /* start nav*/
 
 nav{
@@ -103,7 +103,7 @@ header a{
 
 
 .imagenes__logo{
-	width:11%;
+	width:auto;
 	border-radius: 50%;
 	position: fixed;
 }	
@@ -146,8 +146,12 @@ section article p{
 	font-weight: 500;
 	margin-top: 40px;
 }
+
 .article__seccion__index{
 	margin-top: 80px;
+	text-align: center;
+	align-items: center;
+	align-content: center;
 }
 
 .article__todos{
@@ -158,7 +162,10 @@ section article p{
 	color: #E3E2E2;
 	padding: 10px;
 	margin-bottom: 15px;
-	margin-top: 30px;   
+	margin-top: 30px;
+	text-align: center;
+	align-items: center;
+	align-content: center;   
 }
 .article__todos__2{
 	display: flex;
@@ -167,8 +174,11 @@ section article p{
 	font-size: 25px;
 	color: #E3E2E2;
 	padding: 10px;
-	margin-bottom: 15px;
-	margin-top: 30px;   
+	margin-bottom: 45px;
+	margin-top: 30px;
+	text-align: center;
+	align-items: center;
+	align-content: center;   
 }
 
 .article__todos__h3{
@@ -222,8 +232,11 @@ section article p{
 }
 
 .imagenes__mercado{
-	width: 23%;
+	width: 30%;
 	margin-bottom: 60px;
+}
+.imagenes__mercado1{
+	width: 22%;
 }
 .flex__mercados{
 	display: flex;
@@ -263,7 +276,7 @@ section article p{
 #grid__container__servicios{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: 88px 210px 100px 110vw 70px;
+	grid-template-rows: 88px 210px 10px 110vw 70px;
 	grid-template-areas:"gr__nav gr__nav gr__nav"
 						"gr__header gr__header gr__header"
 						"gr__main gr__main gr__main"
@@ -277,7 +290,7 @@ section article p{
 #grid__container__servicios__2{
 	display: grid;
 	grid-template-columns: 33% 33% 33%;
-	grid-template-rows: 250px 600px 400px;
+	grid-template-rows: 150px 600px 650px;
 	grid-template-areas:"secciongif1 seccion2 secciongif"
 						"seccion3 seccion4 seccion4"
 						"seccion1 seccion1 seccion1";											
@@ -360,21 +373,21 @@ section article p{
 
 .imagenes__servicios{
 	height: auto;
-	width:	800px;
+	width:	60%;
 	padding: 50px;
 	display: flex;
 	flex-direction: row;
 }
 .imagenes__servicios__2{
 	height: auto;
-	width:	500px;
-	padding:35px;
-	margin: 25px 66px;
-	display: flex;
-	flex-direction: row;
-	margin-left: 30px;
+	width: auto;
 }
 
+/*.servicios__titulo{
+	margin-bottom: 115px;
+	margin-top: 240px;
+}
+*/
 /* end servicios html*/
 
 
@@ -422,7 +435,7 @@ section a{
 .article__metodos{
 	display: flex;
 	flex-direction: row;
-	color:#549CBA ;
+	color:silver ;
  	font-size: 2.6rem;
 	line-height: 3rem;
 	font-weight: 2000;
@@ -451,7 +464,6 @@ section a{
 /*start contacto html*/
 
 .grid__contacto{
-	width: 100%;
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: auto;
@@ -493,7 +505,7 @@ section a{
 	background-color:#B0D8E8;
 	color: white;
 	font-family: 'Tiro Bangla', serif;
-	margin: 60px 80px;
+	margin: 60px 270px;
 }	
 
 .label_contacto{
@@ -545,14 +557,13 @@ section a{
 	text-align: center;
 	clear: both;
 	color: white;
-	background: black;
 	font-size: 1.6rem;
 	padding: auto;
-	margin-top: 30px;
+	margin-top: 50px;
 }
 
 footer a{
-	color: white;
+	color: silver;
 	text-decoration: none;	
 }
 
@@ -564,7 +575,6 @@ footer a{
 @media (max-width:  768px){
 	
 	#grid__container__index{
-		width: 99%;
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-template-rows: auto;
@@ -620,7 +630,6 @@ footer a{
 @media (max-width: 1024px){
 	
 	#grid__container__index{
-		width: 99%;
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-template-rows: auto;
@@ -675,7 +684,6 @@ footer a{
 @media (max-width: 1024px){
 	
 	#grid__container__mer{
-		width: 100%;
 		width: auto;		
 		display: grid;
 		grid-template-columns: 1fr;
@@ -691,7 +699,7 @@ footer a{
 	}
 	
 	.imagenes__mercado{
-		width: 50%;
+		width: 100%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -701,6 +709,11 @@ footer a{
 		justify-content:center;
 
 	}
+	
+	.imagenes__mercado1{
+		width: 60%;
+	}
+	
 	.flex__mercados{
 		display: flex;
 		justify-content: center;
@@ -711,8 +724,8 @@ footer a{
 	.parrafo__mercado{ 
 		display:flex ;
 		flex-direction: column;  
-		font-size: 2.8rem;
-		line-height: 5rem;
+		font-size: 1.8rem;
+		line-height: 3rem;
 		justify-content:center;
 		margin:45px ;	
 	}
@@ -738,7 +751,6 @@ footer a{
 
 	#grid__container__servicios{
 		display: grid;
-		width: 99%;
 		grid-template-columns: 1fr;
 		grid-template-rows:auto;
 		grid-template-areas:"gr__nav "
@@ -751,7 +763,6 @@ footer a{
     }
 
     #grid__container__servicios__2{
-    	width: 99%;
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-template-rows: auto;
@@ -769,7 +780,7 @@ footer a{
 
 	.imagenes__servicios{
 		height: auto;
-		width:	85%;
+		width:	100%;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -779,8 +790,8 @@ footer a{
     }
 
     .imagenes__servicios__2{
-		height: auto;
-		width:	85%;
+    	height: auto;
+    	width: 100%;
 		display: flex;
 		flex-direction:column;
 		justify-content: center;
@@ -793,8 +804,7 @@ footer a{
 		display: flex;
 		flex-direction: column;
 		justify-content:center;
-		align-items: center;
-		width: 99%;		
+		align-items: center;	
 		margin: auto;
 	}
 
@@ -849,7 +859,6 @@ footer a{
 @media (max-width:  768px){
 	
 	.grid__container__nosotros{
-		width: 99%;
 		grid-template-columns: 1fr;
 		grid-template-rows: auto;
 		grid-template-areas: "grid__nav__nos"
@@ -912,7 +921,6 @@ footer a{
 @media (max-width: 1024px){
 	
 	.grid__container__nosotros{
-		width: 99%;
 		grid-template-columns: 1fr;
 		grid-template-rows: auto;
 		grid-template-areas: "grid__nav__nos"
@@ -968,7 +976,6 @@ footer a{
 @media (max-width:  768px){
 
 	.grid__contacto{
-		width: 100%;
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-template-rows: auto;
@@ -980,8 +987,9 @@ footer a{
 		}
 		
 	.imagenes__contacto{
-		width: 60%;
-		margin: 40px;
+		width: 80%;
+		margin: 30px;
+		margin-top: 80px;
 
 	}
 
@@ -1018,22 +1026,20 @@ footer a{
 		font-size: 20px;
 	}
 
-}
-
-
-@media (max-width:  1024px){
 	.fieldset__lista{       
-		font-size: 35px;
-		margin: 60px 80px;
+		font-size: 25px;
+		margin: 80px 40px;
 	}	
-
-
 }
+
 
 /*end @media contacto.html*/
 
+
+
 /*start animaciones*/
 
+/*
 .scale:hover{
 	transform: scale(1.2);
 }
@@ -1047,7 +1053,7 @@ footer a{
 	cursor: pointer;
 	transition: transform 1s;
 }
-
+*/
 @keyframes opacidad{
 	from{opacity: 0}
 	to{opacity: 1}
@@ -1068,8 +1074,8 @@ footer a{
 }
 
 .transition:hover{
-	color:deeppink;
-	background: linear-gradient(blue,black);
+	color:#6CCEE0;
+	background: linear-gradient(#056D98,black);
 	transition: all 1s;
 }
 
@@ -1082,7 +1088,8 @@ footer a{
 	animation-name: opacidad;
 	animation-duration: 3s;
 	animation-timing-function : ease-in-out;
-	color: white;
+	color: #788E99;
 }
 
 
+/*end animaciones*/
