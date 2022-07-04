@@ -53,6 +53,11 @@ body{
 	width: 100%;
 }
 
+.delay{
+	animation-name: opacidad;
+	animation-duration: 3s;
+}
+
 
 .main-index{
 	align-items: center;
@@ -494,12 +499,6 @@ footer{
 
 /*end footer*/
 
-
-
-.delay{
-	animation-name: opacidad;
-	animation-duration: 3s;
-}
 
 
 /*anotaciones*/
