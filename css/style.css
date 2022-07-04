@@ -23,12 +23,20 @@ body{
 
 .bg-nav{
 	background-color: rgba(30, 80, 125, 0.6	);
-	font: bold 14px roboto;
 	/*background: linear-gradient( to right,black,#779CBE);*/	
 }
 .bg-nav a{
 	color: white !important;
 	font-size: 1.7rem;
+}
+
+.bg-nav a:hover{
+	color: silver !important;
+	opacity: 0.8;
+}
+
+.dropdown-menu{
+	background: #056D98;
 }
 
 
