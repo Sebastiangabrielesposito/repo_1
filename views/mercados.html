@@ -1,64 +1,171 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>SPARTAN STRATEGY</title>
-	<link rel="shortcut icon"  href="../img/favicon1.ico">
-	<link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
-	<div id="grid__container__mer"> 
-	    <nav class="nav_menu mer__nav">
-		    <a href="../index.html">
-		    	<img class="imagenes__logo" src="../img/logospartan1.png" alt="">
-		    </a>
-			<ul>
-				<li>
-				    <a href="../views/mercados.html">Mercados</a> 
-				</li>
-				<li>
-					<a href="../views/servicios.html">Servicios</a>
-				</li>
-				<li>
-					<a href="../views/quienessomos.html">Quienes somos</a>
-				</li>
-				<li>
-					<a href="../views/contacto.html">Contacto</a>
-				</li>
-			</ul>
-		</nav>
-		<!-- ends nav -->    
-		<header class="gr__mer__header">
-			<a href="../index.html"><h2 class="article__todos__h2">Tipos de mercados</h2></a>	
-		</header>
-		<!--ends header-->	
-		<main class="gr__mer__main">
-			<section class="flex__mercados">
-				<img class="imagenes__mercado" src="../img/tiposdemercados2.jpg" alt="descripción de tipos de comercio">
-				<img class="imagenes__mercado" src="../img/tipos de mercados.png" alt=" descripción de diferencias entre mercados">
-			</section>    
-			<section>
-			   <img class="img__tipos" src="../img/tipos de mercados11.jpg" alt="tipos de mercados">
-			</section>
-			<section>
-				<article>
-					<img class="imagenes__principal imagenes__mercado" src="../img/diferencia.webp" alt="grafico con subida pronunciada">
-					<a href="../views/mercados.html"><img class="imagenes__principal imagenes__mercado" src="../img/retrocesos.png" alt="retrocesos de Fibonacci"></a>
-					<p class="parrafo__mercado imagen__6">En renta fija tienes una idea muy aproximada sobre lo que una inversión podría rendir a tu favor, pero esta ganancia usualmente es moderada. En renta variable, debido a que el valor de las acciones es muy volátil. Puede que tus ganancias aumenten mucho en poco tiempo o también ocurra lo contrario.</p>
-				</article>
-			</section>	
-		</main>		
-			<aside class="gr__mer__aside">
-				<img class="imagenes__mercado1" src="../img/servicios3.png" alt="prestamos contactenos">
-			</aside>				
-		<!--ends main-->	
-		<footer class="gr__mer__footer" id="pie">
-			<a href="https://www.gifsanimados.org/cat-finanzas-y-economia-365.htm"><img src="https://www.gifsanimados.org/data/media/365/finanzas-y-economia-imagen-animada-0051.gif" border="0" alt="finanzas-y-economia-imagen-animada-0051" /></a>
-			<a href="../index.html">Spartan Strategy Derechos reservados 2022</a>
-			<a href="https://www.gifsanimados.org/cat-finanzas-y-economia-365.htm"><img src="https://www.gifsanimados.org/data/media/365/finanzas-y-economia-imagen-animada-0051.gif" border="0" alt="finanzas-y-economia-imagen-animada-0051" /></a>
-		</footer>
-		<!--ends footer-->	
-	</div>	
+	<head>
+	    <!-- Required meta tags -->
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	    <!-- Bootstrap CSS -->
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	  
+	    <!--- mi css -->
+	    <link rel="shortcut icon"  href="../img/favicon1.ico">
+	    <link rel="stylesheet" href="../css/style.css">
+	    <script src="https://kit.fontawesome.com/25167accfa.js" crossorigin="anonymous"></script>
+	    
+	    <title>Spartan strategy-Mercados</title>
+	</head>
+	<body>
+    <!-- start nav --> 
+    <nav class="navbar navbar-expand-lg navbar-light bg-nav sticky-top">
+		<div class="container-fluid">
+	    	<a class="navbar-brand " href="../index.html">
+	        <img src="../img/logospartan1.svg" alt="logo spartan strategy servicios financieros" class="logo">
+	      	</a>
+	      	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="navbar-toggler-icon"></span>
+	      	</button>
+	      	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	        	<ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+		          	<li class="nav-item">
+		            	<a class="nav-link active" aria-current="page" href="../views/mercados.html">Mercados</a>
+		        	</li>
+		        	<li class="nav-item">
+		            	<a class="nav-link active" href="../views/servicios.html">Servicios</a>
+		        	</li>
+		        	<li class="nav-item">
+		            	<a class="nav-link active" href="../views/quienessomos.html">Quienes somos</a>
+		        	</li>
+		        	<li class="nav-item">
+		            		<a class="nav-link active" href="../views/contacto.html">Contacto</a>
+		        	</li>
+		        </ul>	        
+	      	</div>
+	    </div>  
+	</nav>
+	<!--end nav -->
+	
+	<!-- start header -->
+  	<header class="header-img">
+    	<img class="header-img-mercado w-100 d-block img-thumbnail" src="../img/img-mercado.png" alt="caratula mercados financieros"></a>    
+  	</header>
+  	<!-- end header -->
+
+  	<!--start main -->
+  	<main>
+  		<section class="py-3">
+      		<div class="container-fluid">
+        		<h1 class="mercado-h1">Distintos tipos de mercado</h1>
+        		<div class="row main-mercado">
+           	
+        			<div class="card  col-sm-12 col-md-12 col-lg-2">
+			  			<img src="../img/tipos de mercados1.jpg" class="card-img-top w-100 d-block img-thumbnail" alt="foto tipos de mercados2">
+			  			<div class="card-body">
+			    		<h2 class="card-title mercado-h3">Tipos de rentas:</h2>
+			    		<p class="card-text main-p-mercado">En renta fija tienes una idea muy aproximada sobre lo que una inversión podría rendir a tu favor, pero esta ganancia usualmente es moderada. En renta variable,  Puede que tus ganancias aumenten mucho en poco tiempo o también ocurra lo contrario.</p>
+			    		<a href="../views/contacto.html" class="btn btn-primary mercado-enviar mercado-enviar-1">Contactenos</a>
+			    		</div>
+		  			</div>	
+      			
+        			<div class="card col-sm-12 col-md-12 col-lg-2">
+			  			<img src="../img/tiposdemercados2.jpg" class="card-img-top w-100 d-block img-thumbnail" alt="foto tipos de mercados">
+			  			<div class="card-body">
+			    		<h2 class="card-title mercado-h3">Los mercados se caracterizan por:</h2>
+			    		<p class="card-text main-p-mercado">Desde que se dio origen al mercado siempre se ha caracterizado por componerse de compradores y vendedores que son los representantes de la oferta y demanda, para efectuarse las relaciones comerciales de transacciones de productos o mercancía.</p>
+			    		<a href="../views/contacto.html" class="btn btn-primary mercado-enviar mercado-enviar-2">Contactenos</a>
+			  			</div>
+					</div>		
+      			
+        			<div class="card col-sm-12 col-md-12 col-lg-2">
+			  			<img src="../img/img-mercados11.webp" class="card-img-top w-100 d-block img-thumbnail" alt="foto tipos de mercados2">
+			  			<div class="card-body">
+			    		<h2 class="card-title mercado-h3">Criptomonedas:</h2>
+			    		<p class="card-text main-p-mercado">Una criptomoneda es un activo digital que emplea un cifrado criptográfico para garantizar su titularidad y asegurar la integridad de las transacciones, y controlar la creación de unidades adicionales, es decir, evitar que alguien pueda hacer copias como haríamos, por ejemplo, con una foto.</p>
+			    		<a href="../views/contacto.html" class="btn btn-primary mercado-enviar mercado-enviar-3">Contactenos</a>
+			  			</div>
+					</div>		
+      		
+        			<div class="card col-sm-12 col-md-12 col-lg-2">
+			  			<img src="../img/img-mercados12.jpg" class="card-img-top w-100 d-block img-thumbnail" alt="foto tipos de mercados">
+			  			<div class="card-body">
+			    		<h2 class="card-title mercado-h3">Commodities:</h2>
+			    		<p class="card-text main-p-mercado">La bolsas de materias primas o commodities son mercados en los que se compran y venden productos como maíz, gas natural, petróleo, cuero, tripas de cerdo, oro, etc. Cada producto tiene su propio mercado formado por compradores y vendedores.</p>
+			    		<a href="../views/contacto.html" class="btn btn-primary mercado-enviar mercado-enviar-4">Contactenos</a>
+			    		</div>
+			  		</div>
+				</div>			
+          	</div>	
+          		
+          		<div><h1 class="mercado-h1">Tips a tener en cuenta</h1></div>
+          	</div>
+        </section> 			 	
+  		
+        <section class="d-flex justify-content-center align-items-center mb-5">
+        	<div class="card mb-6 mercado-card" style="max-width: 750px;">
+				<div class="row g-0">
+					<div class="col-md-8">
+				  	<img src="../img/tips.jpg" class="img-fluid rounded-start w-100 d-block img-thumbnail" alt="tips de eficiencia">
+					</div>
+					<div class="col-md-4">
+						<div class="card-body">
+				    	<h3 class="mercado-card-titulo">Productividad</h3>
+				    	<p class="card-text">>En Spartan Strategy hemos llegado a la conclusión despues de numerosos estudios que la productividad es fundamental en el campo de las inversiones,por ese motivo creamos un grafico resuminiendo los tips de productivimas mas importantes para usted.</p>
+				    	<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+				  		</div>
+					</div>
+				</div>
+			</div>
+        </section>
+  	</main>
+  	<!--end main --> 
+	
+
+	<!--start footer -->
+	<footer>
+		<div class="container-footer">
+		  	<div class="box-footer">
+		    	<div class="footer-logo">
+		      		<img src="../img/logospartan1.svg" alt="logospartanfooter">
+		    	</div>
+		    	<div class="terminos">
+		     		<p>Aviso legal: Las operaciones con instrumentos financieros o criptomonedas implican un elevado riesgo, incluyendo la pérdida parcial o total del capital invertido, y pueden no ser adecuadas para todos los inversores. Los precios de las criptomonedas son extremadamente volátiles y pueden verse afectados por factores externos de tipo financiero, regulatorio o político. Operar sobre márgenes aumenta los riesgos financieros.</p>
+		    	</div>
+			</div>
+		  
+		  	<div class="box-footer">
+		      <h2>Soluciones</h2>
+		      	<a href="#">App desarrollo</a>
+		      	<a href="#">App marketing</a>
+		      	<a href="#">Ios desarrollo</a>
+		      	<a href="#">Android desarrollo</a>
+		  	</div>
+
+		   	<div class="box-footer">
+		    	<h2>Compania</h2>
+		      	<a href="#">Acerca de</a>
+		      	<a href="#">Trabajos</a>
+		      	<a href="#">Procesos</a>
+		      	<a href="#">Servicios</a>
+		 	</div>
+
+		   	<div class="box-footer">	
+		    	<h2>Redes sociales</h2>
+		      	<a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
+		      	<a href="#"><i class="fa-brands fa-twitter"></i>Twitter</a>
+		      	<a href="#"><i class="fa-brands fa-linkedin"></i>linkedin</a>
+		      	<a href="#"><i class="fa-brands fa-instagram"></i>Instagram</a>
+		  	</div>
+		</div>
+		<div class="box-copyright">
+		    <hr>
+		    <p>Todos los derechos reservados © 2022 <b>SpartanStrategy</b></p>               
+		</div>
+	</footer>
+
+	<!--end footer -->
+
+	<!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </body>
 </html>

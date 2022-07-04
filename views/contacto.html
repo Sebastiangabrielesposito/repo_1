@@ -1,86 +1,163 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>SPARTAN STRATEGY</title>
-	<link rel="shortcut icon"  href="../img/favicon1.ico">
-	<link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
-	<div class="grid__contacto">
-		<nav class="nav_menu nav__contacto">
-			<a href="../index.html">
-			    <img class="imagenes__logo" src="../img/logospartan1.png" alt="">
-			</a>
-			<ul>
-				<li>
-					<a href="../views/mercados.html">Mercados</a> 
-				</li>
-				<li>
-					<a href="../views/servicios.html">Servicios</a>
-				</li>
-				<li>
-					<a href="../views/quienessomos.html">Quienes somos</a>
-				</li>
-				<li>
-					<a href="../views/contacto.html">Contacto</a>
-				</li>
-			</ul>
-		</nav>
-		<header class="header__contacto">
-		    <a href="../index.html"><h2 class="article__todos__h2">Contacto</h2></a>
-		    <img class="imagenes__contacto" src="../img/contacto.png" alt="contactanos">
-		</header>    	    
-		<main class="main__contacto">
-			<section>
-				<form action="envio.php" >
-					<fieldset class="fieldset__lista transition">
-					  	<legend class="info">Info personal</legend>
-						<label for="nombre">nombre:</label>
-						<input class="imput__contacto" type="text" id="nombre">
-						<label for="email">email:</label>
-						<input class="imput__contacto" type="email" id="email">
-						<label for="teléfono">teléfono:</label>
-						<input class="imput__contacto" type="text" name="" id="telefono">
-					</fieldset>
-					    <label  class="label_contacto" for="mensaje">motivo de mensaje::</label>
-						<br>
-						<textarea name="" id="mensaje" cols="40" rows="10"></textarea>
-						<br>
-						<input class="imput__contacto transition" type="reset" value="cancelar">
-						<input class="imput__contacto transition"	type="submit" value="enviar">   
-			</section>
-		    
-			<section> 
-				<iframe class="contacto__mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.973007251843!2d-58.37463588516724!3d-34.604844065063865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacd57f91ce9%3A0xefc7d342a78bc306!2sBanco%20Central%20de%20la%20Rep%C3%BAblica%20Argentina!5e0!3m2!1ses!2sar!4v1653719852727!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-			</section>
-			<section>
-				<div>
-					<h3 class="contacto__mensaje">Siganos en...</h3>
+	<head>
+	    <!-- Required meta tags -->
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	    <!-- Bootstrap CSS -->
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	  
+	    <!--- mi css -->
+	    <link rel="shortcut icon"  href="../img/favicon1.ico">
+	    <link rel="stylesheet" href="../css/style.css">
+	    <script src="https://kit.fontawesome.com/25167accfa.js" crossorigin="anonymous"></script>
+	    
+	    <title>Spartan strategy-Contacto</title>
+	</head>
+	<body>
+    <!-- start nav --> 
+    <nav class="navbar navbar-expand-lg navbar-light bg-nav sticky-top">
+		<div class="container-fluid">
+	    	<a class="navbar-brand " href="../index.html">
+	        <img src="../img/logospartan1.svg" alt="logo spartan strategy servicios financieros" class="logo">
+	      	</a>
+	      	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="navbar-toggler-icon"></span>
+	      	</button>
+	      	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	        	<ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+		          	<li class="nav-item">
+		            		<a class="nav-link active" aria-current="page" href="../views/mercados.html">Mercados</a>
+		        	</li>
+		        	<li class="nav-item">
+		            		<a class="nav-link active" href="../views/servicios.html">Servicios</a>
+		        	</li>
+		        	<li class="nav-item">
+		            		<a class="nav-link active" href="../views/quienessomos.html">Quienes somos</a>
+		        	</li>
+		        	<li class="nav-item">
+		            		<a class="nav-link active" href="../views/contacto.html">Contacto</a>
+		        	</li>
+		        </ul>	        
+	      	</div>
+	    </div>  
+	</nav>
+	<!--end nav -->
+
+
+	<!-- start header -->
+  	<header class="header-img">
+    	<img class="header-img-contacto" src="../img/img-contacto.png" alt="caratula contacto"></a>    
+  	</header>
+  	<!-- end header -->
+
+  	<!-- start main -->
+  	<main>
+  		<h1 class="contacto-h1">Registrese y dejé su consulta</h1>
+  		<div class="main-contacto">
+		  	<form class="row g-3">
+				<div class="col-md-6">
+					<label for="inputEmail4" class="form-label">Nombre</label>
+			    	<input type="name" class="form-control" id="inputEmail4">
+			  	</div>
+			  	<div class="col-md-6">
+			    	<label for="inputPassword4" class="form-label">Apellido</label>
+			    	<input type="lastname" class="form-control" id="inputPassword4">
+			  	</div>
+			  	<div class="col-6">
+			    	<label for="inputAddress" class="form-label">Teléfono</label>
+			    	<input type="text" class="form-control" id="inputAddress" placeholder="Codigo de pais + número">
+			  	</div>
+			  	<div class="col-6">
+			    	<label for="inputAddress2" class="form-label">Email</label>
+			    	<input type="text" class="form-control" id="inputAddress2" placeholder="Example@....">
+			  	</div>
+			  	<div class="col-md-6">
+			    	<label for="inputCity" class="form-label">Ciudad</label>
+			    	<input type="text" class="form-control" id="inputCity">
+			  	</div>
+			  	<div class="col-md-6">
+			    	<label for="inputState" class="form-label">país</label>
+			    	<select id="inputState" class="form-select">
+			      	<option selected>......</option>
+			      	<option>Sudamerica</option>
+			    	<option>Europa</option>
+			    	<option>Africa</option>
+			    	<option>Oceanía</option>
+			    	<option>America del norte</option>
+			    	</select>
+			  	</div>
+			  	<div class="mb-4">
+					<label for="exampleFormControlTextarea1" class="form-label">Mensaje:</label>
+					<textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
 				</div>
-			</section> 
-			<section class="contacto__seccion__links contacto__mensaje">
-				<a href="https://twitter.com">
-	      			<img class="contacto__links" src="../img/logo twitter.png" alt="twitter">
-	       		</a>
-	        	<a href="https://facebook.com">
-	      			<img class="contacto__links" src="../img/logo facebook.png" alt="facebook">
-	        	</a>
-	        	<a href="https://telegram.com">  
-	        		<img class="contacto__links" src="../img/logo telegram.png" alt="telegram">
-	        	</a>
-	        	<a href="https://instagram.com">  
-	       		 	<img class="contacto__links" src="../img/logo instagram.png" alt="instagram">
-	        	</a>
-	   		</section>
-		</main>
-		<footer class="footer__contacto" id="pie">
-			<a href="https://www.gifsanimados.org/cat-finanzas-y-economia-365.htm"><img src="https://www.gifsanimados.org/data/media/365/finanzas-y-economia-imagen-animada-0051.gif" border="0" alt="finanzas-y-economia-imagen-animada-0051" /></a>
-			<a href="../index.html">Spartan Strategy Derechos reservados 2022</a>
-			<a href="https://www.gifsanimados.org/cat-finanzas-y-economia-365.htm"><img src="https://www.gifsanimados.org/data/media/365/finanzas-y-economia-imagen-animada-0051.gif" border="0" alt="finanzas-y-economia-imagen-animada-0051" /></a>
-		</footer>
-	</div>
+
+			  	<div class="col-12">
+			    	<div class="form-check">
+			    		<input class="form-check-input" type="checkbox" id="gridCheck">
+			    		<label class="form-check-label" for="gridCheck">
+			        	Soy empresa
+			      		</label>
+			    	</div>
+				</div>
+			  	<div class="col-12">
+			    	<button type="submit" class="contacto-enviar btn ">Enviar</button>
+				</div>
+			</form>	
+		</div>			
+				<hr>
+		<div>
+			<h3 class="contacto-h3">Nuestas oficinas en Bs.as y California</h3>
+			<div class="contacto-mapa">
+				<iframe class="contacto__mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.973007251843!2d-58.37463588516724!3d-34.604844065063865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacd57f91ce9%3A0xefc7d342a78bc306!2sBanco%20Central%20de%20la%20Rep%C3%BAblica%20Argentina!5e0!3m2!1ses!2sar!4v1653719852727!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+		</div>
+	</main>
+
+
+  	<!-- end main -->
+
+
+	<!--start footer -->
+	<footer>
+		<div class="container-footer">
+		  	<div class="box-footer">
+		    	<div class="footer-logo">
+		      		<img src="../img/logospartan1.svg" alt="logospartanfooter">
+		    	</div>
+		    	<div class="terminos">
+		     		<p>Aviso legal: Las operaciones con instrumentos financieros o criptomonedas implican un elevado riesgo, incluyendo la pérdida parcial o total del capital invertido, y pueden no ser adecuadas para todos los inversores. Los precios de las criptomonedas son extremadamente volátiles y pueden verse afectados por factores externos de tipo financiero, regulatorio o político. Operar sobre márgenes aumenta los riesgos financieros.</p>
+		    	</div>
+			</div>
+		  
+		  	<div class="box-footer">
+		      <h2>Soluciones</h2>
+		      	<a href="#">App desarrollo</a>
+		      	<a href="#">App marketing</a>
+		      	<a href="#">Ios desarrollo</a>
+		      	<a href="#">Android desarrollo</a>
+		  	</div>
+
+		   	<div class="box-footer">
+		    	<h2>Compania</h2>
+		      	<a href="#">Acerca de</a>
+		      	<a href="#">Trabajos</a>
+		      	<a href="#">Procesos</a>
+		      	<a href="#">Servicios</a>
+		 	</div>
+
+		   	<div class="box-footer">	
+		    	<h2>Redes sociales</h2>
+		      	<a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
+		      	<a href="#"><i class="fa-brands fa-twitter"></i>Twitter</a>
+		      	<a href="#"><i class="fa-brands fa-linkedin"></i>linkedin</a>
+		      	<a href="#"><i class="fa-brands fa-instagram"></i>Instagram</a>
+		  	</div>
+		</div>
+		<div class="box-copyright">
+		    <hr>
+		    <p>Todos los derechos reservados © 2022 <b>SpartanStrategy</b></p>
 	
 </body>
 </html>
