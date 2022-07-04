@@ -39,7 +39,6 @@ body{
 	background: #056D98;
 }
 
-
 /*end nav*/
 
 /*start index.html*/
@@ -122,6 +121,11 @@ body{
 	background: linear-gradient(to right , black,#056D98);
 	color:white ;
 	
+}
+.mercado-enviar:hover{
+	color: #B0D8E8;
+	transition: 0.7s;
+	border-radius: 50%;
 }
 
 .mercado-enviar-1{
@@ -256,13 +260,54 @@ body{
 	color:white ;
 	font-size: rem;
 	margin-top: 15px;
-} 
+}
+
 .nosotros-enviar-2{
 	background: linear-gradient(to right , black,#056D98);
 	color:white ;
 	font-size: rem;
 	margin-top: 57px;
+}
+
+.transition:hover{
+	color:#B0D8E8;
+	background: linear-gradient(#056D98,black);
+	transition: all 1s;
+	border-radius: 50%;
+	border: none;
 } 
+
+.main-p-nosotros{
+	color:#080F51 ;
+	font-size: 1.5em;
+	margin-top: 10px;
+}
+
+#selectores p.sparta:first-letter{
+	color: #354880;
+	font-size: 3.7rem;
+	line-height: 4rem;
+	font-weight: 800;
+	margin-right: 2px;	
+}
+
+/*inicio animaciones nosotros*/
+
+@keyframes opacidad{
+	from{opacity: 0}
+	to{opacity: 1}
+}
+
+.nosotros-h3{
+	animation-name: opacidad;
+	animation-duration: 7s;
+}
+.nosotros-metodos{
+	animation-name: opacidad;
+	animation-duration: 7s;
+}
+
+
 
 
 @media (max-width: 1024px){
@@ -297,6 +342,7 @@ body{
 
 
 /*start contacto.html*/
+
 .header-img-contacto{
 	width: 100% ;
 }
@@ -320,13 +366,28 @@ body{
 	font-size: 3.2rem;
 }
 
+.contacto-empresa:hover{
+	color: #2CA0CE;
+}
+
+
 .contacto-enviar{
 	background: linear-gradient(to right , black,#056D98);
 	color:white ;
 	font-size: 1.4rem;
 	margin-top: 30px;
+	cursor: pointer;
+	border: none;
+	transition: .7s;
 
 }
+
+.contacto-enviar:hover{
+	color:#B0D8E8;
+
+}
+
+
 .contacto-mapa{
 	display: flex;
 	justify-content: center;
@@ -347,6 +408,7 @@ main hr{
 		width: 100%;
 	}
 }
+
 
 /*end contacto.html*/
 
@@ -423,52 +485,26 @@ footer{
 }
 /*end footer*/
 
+
 /*start animaciones*/
 
-@keyframes opacidad{
-	from{opacity: 0}
-	to{opacity: 1}
-}
 
-.nosotros-h3{
-	animation-name: opacidad;
-	animation-duration: 7s;
-}
-.nosotros-metodos{
-	animation-name: opacidad;
-	animation-duration: 7s;
-}
-/*
+
 .index__foto{
 	animation-name: opacidad;
 	animation-duration: 3s;
 }
 
-.transition:hover{
-	color:#6CCEE0;
-	background: linear-gradient(#056D98,black);
-	transition: all 1s;
-	border-radius: 50%;
-}
+
+/*
+
 
 .transition{
 	background: #B0D8E8;
 	color:white ;
 }
 
-.contacto__mensaje{
-	animation-name: opacidad;
-	animation-duration: 3s;
-	animation-timing-function : ease-in-out;
-	color: #788E99;
-}
 
-.transition__nav:hover{
-	color:#6CCEE0;
-	transition: all 1s;
-}
-.transition__nav{
-	color:white ;
 }
 /*end animaciones*/
 
