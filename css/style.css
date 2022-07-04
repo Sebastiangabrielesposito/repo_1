@@ -236,7 +236,9 @@ body{
  	font-size: 2.4rem;
 	line-height: 2.5rem;
 	font-weight: 2000;
- 	list-style:none;  	
+ 	list-style:none;
+ 	align-items: center;
+ 	text-align: center;  	
 }
 .nosotros-metodos{
 	background: rgba(53,103, 123, 0.6);
