@@ -41,16 +41,18 @@ body{
 
 /*end nav*/
 
+
 /*start index.html*/
 
 .header-img{
 	display: flex;
 	justify-content: center;
 }
+
 .header-img-index{
 	width: 100%;
 }
-/*end header*/
+
 
 .main-index{
 	align-items: center;
@@ -75,16 +77,12 @@ body{
 
 }
 
-
 /*end index-html*/
 
 
 
 /*start mercado.html*/
-.header-img-mercado{
-	
-	
-}
+
 .main-mercado{
 	display: flex;
 	justify-content:space-evenly;
@@ -97,10 +95,6 @@ body{
 	font-family: 'Tiro Bangla', serif;
 	font-size: 1.5em;
 	margin-top: 10px;
-}
-
-.main-mercado img{
-	
 }
 
 .mercado-h1{
@@ -170,9 +164,9 @@ body{
 		
 		font-size: 2.9rem;
 		border:1px double #0E414A;
-
 	}
 }
+
 
 /*end mercado.html*/
 
@@ -180,6 +174,7 @@ body{
 
 
 /*start servicios.html*/
+
 .header-img-servicios{
 	width: 100%;
 }
@@ -199,9 +194,12 @@ body{
 	padding: 10px;
 	text-align: center;
 }
+
 .servicios-dh2{
 	margin-top: 70px;
 }
+
+
 /*end servicios.html*/
 
 
@@ -209,9 +207,11 @@ body{
 
 
 /*start quienes somos.html*/
+
 .header-img-nosotros{
 	width: 100%;
 }
+
 .main-nosotros{
 	display: flex;
 	justify-content:space-evenly;
@@ -291,7 +291,6 @@ body{
 	margin-right: 2px;	
 }
 
-/*inicio animaciones nosotros*/
 
 @keyframes opacidad{
 	from{opacity: 0}
@@ -307,7 +306,7 @@ body{
 	animation-duration: 7s;
 }
 
-
+/*start @media nosotros*/
 
 
 @media (max-width: 1024px){
@@ -336,6 +335,10 @@ body{
 		align-items: center;
 	}
 }
+
+/*end @media nosotros*/
+
+
 /*end quienes somos.html*/
 
 
@@ -384,15 +387,16 @@ body{
 
 .contacto-enviar:hover{
 	color:#B0D8E8;
-
+	border-radius: 50%;
+	border: none;
 }
-
 
 .contacto-mapa{
 	display: flex;
 	justify-content: center;
 	margin: 50px;
 }
+
 main hr{
 	border: none;
 	height: 1px;
@@ -400,6 +404,8 @@ main hr{
 	max-width: 1200px;
 	margin: auto;
 }
+
+/*start @media contacto.html*/
 
 @media (max-width:  768px){
 
@@ -409,6 +415,7 @@ main hr{
 	}
 }
 
+/*end @media contacto.html*/
 
 /*end contacto.html*/
 
@@ -483,31 +490,19 @@ footer{
 	background-color:#060945;
 
 }
+
+
 /*end footer*/
 
 
-/*start animaciones*/
 
-
-
-.index__foto{
+.delay{
 	animation-name: opacidad;
 	animation-duration: 3s;
 }
 
 
-/*
-
-
-.transition{
-	background: #B0D8E8;
-	color:white ;
-}
-
-
-}
-/*end animaciones*/
-
+/*anotaciones*/
 
 /*col-sm-8 col-md-8 col-lg-3*/
 /*<article class="col-sm-12 col-md-6 col-lg-8">*/
