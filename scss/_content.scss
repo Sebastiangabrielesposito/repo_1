@@ -1,0 +1,34 @@
+//content
+
+//index
+.header-img{
+	display: flex;
+	justify-content: center;
+	animation-name: opacidad;
+	animation-duration: 3s;
+	.header-img-index{
+		width: 100%;	
+	}
+}
+.main-index{
+	align-items: center;
+	margin: 10px;
+	margin-top: 40px;
+	.index-h1{
+		color: $onecolor;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	.index-h3{
+		color: $twocolor;
+		text-align: center;
+	}
+	.main-p-index{
+		color:$maincolor;
+		font-size: 1.3em;
+		margin-top: 7px;
+	}
+	
+}
+//end index
+

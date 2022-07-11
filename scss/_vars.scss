@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&family=Tiro+Bangla:ital@1&display=swap');
+
+//variables globales
+
+//setting
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Tiro Bangla', serif;
+}
+
+
+html{
+	font-size: 62.5%;
+}
+
+
+body{
+	background-attachment: fixed;	
+	background: linear-gradient(to right , white,#056D98);
+}
+
+//fonts
+$onefont:'Tiro Bangla', serif;
+$twofont:'roboto', serif;
+
+
+//colores:
+$onecolor: #0E414A;
+$twocolor:#063C58;
+$maincolor:#080F51;
+$copyrigthcolor:#060945;
+
+//animacion
+
+@keyframes opacidad{
+	from{opacity: 0}
+	to{opacity: 1}
+}

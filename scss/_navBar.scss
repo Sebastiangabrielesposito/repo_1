@@ -1,0 +1,18 @@
+//navBar
+
+.bg-nav{
+	background-color: rgba(30, 80, 125, 0.6	);
+	.dropdown-menu{
+		background: #056D98;
+	}
+	a{
+		color: white !important;
+		font-size: 1.7rem;
+		&:hover{
+			color: silver !important;
+			opacity: 0.8;
+			
+		}	
+	}
+}
+
