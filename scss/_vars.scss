@@ -29,14 +29,45 @@ $twofont:'roboto', serif;
 
 
 //colores:
-$onecolor: #0E414A;
-$twocolor:#063C58;
+$onecolor: #1E4B72;
+$twocolor:#063C90;
 $maincolor:#080F51;
 $copyrigthcolor:#060945;
+$colorservice:#17265F;
 
-//animacion
+//align:
+$alicenter:center;
 
+//justify
+$space-e:space-evenly;
+
+//animacion:
 @keyframes opacidad{
 	from{opacity: 0}
 	to{opacity: 1}
 }
+
+
+//extend (mercado-h1)
+.color{
+	color: $onecolor;
+	text-align: $alicenter;
+}
+
+//@mixin d-flex (main nosotros)
+@mixin d-flex($justify-se,$align){
+	display: flex;
+	justify-content: $justify-se;
+	align-items:$align;
+	padding: 2px;
+}
+
+
+//maps (mercados-quienes somos-contacto)
+$mix:(
+	"oneco":#ACB9C1,
+	"twoco":#354880,
+	"whiteco":#F3F3F3,
+	"na":none,
+	);
+
