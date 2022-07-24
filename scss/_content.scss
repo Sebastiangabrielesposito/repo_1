@@ -61,6 +61,11 @@
 	.mercado-enviar{
 		background: linear-gradient(to right , black,#056D98);
 		color:white ;
+		@media (max-width: 991px){
+			font-size:1.5rem;
+			display: flex;
+			justify-content:center;
+		}
 		&:hover{
 			color: #B0D8E8;
 			transition: 0.7s;
@@ -71,13 +76,13 @@
 		margin-top: 22px;
 	}
 	.mercado-enviar-2{
-		margin-top: 12px ;
+		margin-top: 5px ;
 	}
 	.mercado-enviar-3{
-		margin-top: 20px;
+		margin-top: 14px;
 	}
 	.mercado-enviar-4{
-		margin-top:68px;
+		margin-top:58px;
 	}	
 	@media (max-width:  992px){	
 		.main-p-mercado{
@@ -87,6 +92,7 @@
 			font-size: 2.9rem;
 			border:1px double $onecolor;
 		}
+		
 	}
 }
 .mercado-card{
@@ -145,9 +151,12 @@
 		color:$maincolor;
 		font-size: 1.5em;
 		margin-top: 10px;	
+		@media (min-width: 768px) and (max-width: 1024px){
+			align-items: center;
+		}
 	}	
 	#selectores p.sparta:first-letter{
-		color: map-get($map:$mix, $key:"twoco") ;
+		color: map-get($map:$mix, $key:"twoco");
 		font-size: 3.7rem;
 		line-height: 4rem;
 		font-weight: 800;
@@ -157,6 +166,13 @@
 		background: linear-gradient(to right , black,#056D98);
 		color:map-get($map:$mix, $key:"whiteco");
 		margin-top: 15px;
+		@media (min-width: 768px) and (max-width: 1024px){
+			margin-top: 30px;	
+		}
+		@media (max-width: 767px){
+			display: flex;
+			justify-content: center;	
+		}
 		&:hover{
 			color:#B0D8E8;
 			background: linear-gradient(#056D98,black);
@@ -168,7 +184,15 @@
 	.nosotros-enviar-2{
 		background: linear-gradient(to right , black,#056D98);
 		color:map-get($map:$mix, $key:"whiteco");
-		margin-top: 55px;
+		margin-top: 60px;
+		@media (min-width: 768px) and (max-width: 1100px){
+			margin-top: 120px;
+		}
+		@media (max-width: 767px){
+			display: flex;
+			justify-content: center;
+			
+		}
 		&:hover{
 			color:#B0D8E8;
 			background: linear-gradient(#056D98,black);
@@ -196,14 +220,14 @@
 	background: rgba(53,103, 123, 0.6);
 	display: flex;
 	justify-content: space-between;
-	margin: 20px;
-	padding: 10px;
+	margin: 30px;
+	padding: 20px;
 	margin-bottom: 100px;
 	animation-name: opacidad;
 	animation-duration: 7s;
 	@media (max-width: 1024px){
 		justify-content: center;
-		margin: 5px;
+		margin: 15px;
 		padding: 5px;
 		margin-bottom: 100px;
 	}
@@ -223,7 +247,7 @@
 			color: map-get($map:$mix, $key:"whiteco") ;
 			font-size: 3.5rem;
 			line-height: 6.5rem;
-			margin-top: 15px;	 				
+			margin-top: 15px; 				
 		}
 	}
 }
@@ -249,6 +273,10 @@
 	font-size: 1.9rem;
 	color:$colorservice;
 	margin: 100px;	
+	@media (max-width: 768px){
+		font-size: 2.1rem;
+		margin: 50px;	
+	}
 	.contacto-empresa:hover{
 		color: #2CA0CE;
 		cursor: pointer;
@@ -293,3 +321,23 @@ main hr{
 	}
 }
 //end contacto
+
+//404.html
+
+.error__body{
+	background: white;
+}
+.error__button{
+	background: black;
+	font-size: 1.8rem;
+	cursor: pointer;
+	border-radius: 10px;
+	;
+	&:hover{
+		background: #148495;
+		color: #F59649;
+		transition: 1.2s ease all;
+		border-radius: 65px	
+	}
+}
+//end 404.html

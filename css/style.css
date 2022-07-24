@@ -1,18 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&family=Tiro+Bangla:ital@1&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Tiro Bangla', serif; }
-
-html {
-  font-size: 62.5%; }
-
-body {
-  background-attachment: fixed;
-  background: linear-gradient(to right, white, #056D98); }
-
 @keyframes opacidad {
   from {
     opacity: 0; }
@@ -82,6 +69,11 @@ body {
   .main-mercado .mercado-enviar {
     background: linear-gradient(to right, black, #056D98);
     color: white; }
+    @media (max-width: 991px) {
+      .main-mercado .mercado-enviar {
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center; } }
     .main-mercado .mercado-enviar:hover {
       color: #B0D8E8;
       transition: 0.7s;
@@ -89,11 +81,11 @@ body {
   .main-mercado .mercado-enviar-1 {
     margin-top: 22px; }
   .main-mercado .mercado-enviar-2 {
-    margin-top: 12px; }
+    margin-top: 5px; }
   .main-mercado .mercado-enviar-3 {
-    margin-top: 20px; }
+    margin-top: 14px; }
   .main-mercado .mercado-enviar-4 {
-    margin-top: 68px; }
+    margin-top: 58px; }
   @media (max-width: 992px) {
     .main-mercado .main-p-mercado {
       font-size: 2.5em; }
@@ -146,6 +138,9 @@ body {
     color: #080F51;
     font-size: 1.5em;
     margin-top: 10px; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .main-nosotros .main-p-nosotros {
+        align-items: center; } }
   .main-nosotros #selectores p.sparta:first-letter {
     color: #354880;
     font-size: 3.7rem;
@@ -156,6 +151,13 @@ body {
     background: linear-gradient(to right, black, #056D98);
     color: #F3F3F3;
     margin-top: 15px; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .main-nosotros .nosotros-enviar {
+        margin-top: 30px; } }
+    @media (max-width: 767px) {
+      .main-nosotros .nosotros-enviar {
+        display: flex;
+        justify-content: center; } }
     .main-nosotros .nosotros-enviar:hover {
       color: #B0D8E8;
       background: linear-gradient(#056D98, black);
@@ -165,7 +167,14 @@ body {
   .main-nosotros .nosotros-enviar-2 {
     background: linear-gradient(to right, black, #056D98);
     color: #F3F3F3;
-    margin-top: 55px; }
+    margin-top: 60px; }
+    @media (min-width: 768px) and (max-width: 1100px) {
+      .main-nosotros .nosotros-enviar-2 {
+        margin-top: 120px; } }
+    @media (max-width: 767px) {
+      .main-nosotros .nosotros-enviar-2 {
+        display: flex;
+        justify-content: center; } }
     .main-nosotros .nosotros-enviar-2:hover {
       color: #B0D8E8;
       background: linear-gradient(#056D98, black);
@@ -191,15 +200,15 @@ body {
   background: rgba(53, 103, 123, 0.6);
   display: flex;
   justify-content: space-between;
-  margin: 20px;
-  padding: 10px;
+  margin: 30px;
+  padding: 20px;
   margin-bottom: 100px;
   animation-name: opacidad;
   animation-duration: 7s; }
   @media (max-width: 1024px) {
     .nosotros-metodos {
       justify-content: center;
-      margin: 5px;
+      margin: 15px;
       padding: 5px;
       margin-bottom: 100px; } }
   .nosotros-metodos .article__metodos {
@@ -238,6 +247,10 @@ body {
   font-size: 1.9rem;
   color: #17265F;
   margin: 100px; }
+  @media (max-width: 768px) {
+    .main-contacto {
+      font-size: 2.1rem;
+      margin: 50px; } }
   .main-contacto .contacto-empresa:hover {
     color: #2CA0CE;
     cursor: pointer; }
@@ -277,6 +290,20 @@ main hr {
   @media (max-width: 768px) {
     .contacto-mapa {
       width: auto; } }
+
+.error__body {
+  background: white; }
+
+.error__button {
+  background: black;
+  font-size: 1.8rem;
+  cursor: pointer;
+  border-radius: 10px; }
+  .error__button:hover {
+    background: #148495;
+    color: #F59649;
+    transition: 1.2s ease all;
+    border-radius: 65px; }
 
 footer {
   padding: 10px 0px;
@@ -326,3 +353,16 @@ footer {
         border: none;
         height: 1px;
         background-color: #060945; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Tiro Bangla', serif; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background-attachment: fixed;
+  background: linear-gradient(to right, white, #056D98); }
