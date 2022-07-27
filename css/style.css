@@ -47,7 +47,7 @@
 
 .mercado-h1 {
   margin: 70px;
-  font-size: 3.5rem; }
+  font-size: 3.7rem; }
   @media (max-width: 992px) {
     .mercado-h1 {
       font-size: 3.5rem; } }
@@ -59,16 +59,18 @@
   .main-mercado .mercado-h3 {
     color: #1E4B72;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     border: 1px double #1E4B72; }
   .main-mercado .main-p-mercado {
     color: #080F51;
     font-family: "Tiro Bangla", serif;
-    font-size: 1.5em;
-    margin-top: 10px; }
+    font-size: 1.8rem;
+    margin-top: 15px; }
   .main-mercado .mercado-enviar {
     background: linear-gradient(to right, black, #056D98);
-    color: white; }
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 10px; }
     @media (max-width: 991px) {
       .main-mercado .mercado-enviar {
         font-size: 1.5rem;
@@ -78,14 +80,6 @@
       color: #B0D8E8;
       transition: 0.7s;
       border-radius: 50%; }
-  .main-mercado .mercado-enviar-1 {
-    margin-top: 22px; }
-  .main-mercado .mercado-enviar-2 {
-    margin-top: 5px; }
-  .main-mercado .mercado-enviar-3 {
-    margin-top: 14px; }
-  .main-mercado .mercado-enviar-4 {
-    margin-top: 58px; }
   @media (max-width: 992px) {
     .main-mercado .main-p-mercado {
       font-size: 2.5em; }
@@ -136,11 +130,12 @@
   padding: 2px; }
   .main-nosotros .main-p-nosotros {
     color: #080F51;
-    font-size: 1.5em;
+    font-size: 1.8em;
     margin-top: 10px; }
     @media (min-width: 768px) and (max-width: 1024px) {
       .main-nosotros .main-p-nosotros {
-        align-items: center; } }
+        align-items: center;
+        justify-content: center; } }
   .main-nosotros #selectores p.sparta:first-letter {
     color: #354880;
     font-size: 3.7rem;
@@ -150,6 +145,9 @@
   .main-nosotros .nosotros-enviar {
     background: linear-gradient(to right, black, #056D98);
     color: #F3F3F3;
+    margin: auto;
+    font-size: 1.2rem;
+    border-radius: 10px;
     margin-top: 15px; }
     @media (min-width: 768px) and (max-width: 1024px) {
       .main-nosotros .nosotros-enviar {
@@ -159,23 +157,6 @@
         display: flex;
         justify-content: center; } }
     .main-nosotros .nosotros-enviar:hover {
-      color: #B0D8E8;
-      background: linear-gradient(#056D98, black);
-      transition: all 1s;
-      border-radius: 50%;
-      border: none; }
-  .main-nosotros .nosotros-enviar-2 {
-    background: linear-gradient(to right, black, #056D98);
-    color: #F3F3F3;
-    margin-top: 60px; }
-    @media (min-width: 768px) and (max-width: 1100px) {
-      .main-nosotros .nosotros-enviar-2 {
-        margin-top: 120px; } }
-    @media (max-width: 767px) {
-      .main-nosotros .nosotros-enviar-2 {
-        display: flex;
-        justify-content: center; } }
-    .main-nosotros .nosotros-enviar-2:hover {
       color: #B0D8E8;
       background: linear-gradient(#056D98, black);
       transition: all 1s;

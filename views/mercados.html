@@ -15,8 +15,8 @@
 	    <!--- mi css -->
 	    <link rel="shortcut icon"  href="../img/favicon1.ico">
 	    <link rel="stylesheet" href="../css/style.css">
-	    <script src="https://kit.fontawesome.com/25167accfa.js" crossorigin="anonymous"></script>
-	    
+	    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 	    <title>SPARTAN STRATEGY-Conozca los distintos tipos de mercados</title>
 	</head>
 	<body>
@@ -57,54 +57,76 @@
 
   	<!--start main -->
   	<main>
-  		<section class="py-3">
-      		<div class="container-fluid">
-        		<h1 class="mercado-h1">Distintos tipos de mercado</h1>
-        		<div class="row main-mercado card-body">
-           	
-        			<div class="card  col-sm-12 col-md-12 col-lg-2">
-			  			<img src="../img/tipos de mercados1.jpg" class="card-img-top w-100 d-block img-thumbnail" alt="tipos de rentas">
-			  			<div class="card-body">
-			    		<h2 class="card-title mercado-h3">Tipos de rentas:</h2>
-			    		<p class="card-text main-p-mercado">En renta fija tienes una idea muy aproximada sobre lo que una inversión podría rendir a tu favor, pero esta ganancia usualmente es moderada. En renta variable,  Puede que tus ganancias aumenten mucho en poco tiempo o también ocurra lo contrario.</p>
-			    		<a href="../views/contacto.html" class="btn btn-primary mercado-enviar mercado-enviar-1">Contactenos</a>
-			    		</div>
-		  			</div>	
-      			
-        			<div class="card col-sm-12 col-md-12 col-lg-2 ">
-			  			<img src="../img/tiposdemercados2.jpg" class="card-img-top w-100 d-block img-thumbnail" alt="los mercados se caracterizan por:">
-			  			<div class="card-body">
-			    		<h2 class="card-title mercado-h3">Los mercados se caracterizan por:</h2>
-			    		<p class="card-text main-p-mercado">Desde que se dio origen al mercado siempre se ha caracterizado por componerse de compradores y vendedores que son los representantes de la oferta y demanda, para efectuarse las relaciones comerciales de transacciones de productos o mercancía.</p>
-			    		<a href="../views/contacto.html" class="btn btn-primary mercado-enviar mercado-enviar-2">Contactenos</a>
-			  			</div>
-					</div>		
-      			
-        			<div class="card col-sm-12 col-md-12 col-lg-2">
-			  			<img src="../img/img-mercados11.webp" class="card-img-top w-100 d-block img-thumbnail" alt="criptomonedas">
-			  			<div class="card-body">
-			    		<h2 class="card-title mercado-h3">Criptomonedas:</h2>
-			    		<p class="card-text main-p-mercado">Una criptomoneda es un activo digital que emplea un cifrado criptográfico para garantizar su titularidad y asegurar la integridad de las transacciones, y controlar la creación de unidades adicionales, es decir, evitar que alguien pueda hacer copias como haríamos, por ejemplo, con una foto.</p>
-			    		<a href="../views/contacto.html" class="btn btn-primary mercado-enviar mercado-enviar-3">Contactenos</a>
-			  			</div>
-					</div>		
-      		
-        			<div class="card col-sm-12 col-md-12 col-lg-2">
-			  			<img src="../img/img-mercados12.jpg" class="card-img-top w-100 d-block img-thumbnail" alt="commodities">
-			  			<div class="card-body">
-			    		<h2 class="card-title mercado-h3">Commodities:</h2>
-			    		<p class="card-text main-p-mercado">La bolsas de materias primas o commodities son mercados en los que se compran y venden productos como maíz, gas natural, petróleo, cuero, tripas de cerdo, oro, etc. Cada producto tiene su propio mercado formado por compradores y vendedores.</p>
-			    		<a href="../views/contacto.html" class="btn btn-primary mercado-enviar mercado-enviar-4">Contactenos</a>
-			    		</div>
-			  		</div>
-				</div>			
-          	</div>	
-          		
-          		<div><h2 class="mercado-h1">Tips a tener en cuenta</h2></div>
-          	</div>
-        </section> 			 	
-  		
-        <section class="d-flex justify-content-center align-items-center mb-5">
+  		<section>
+  			<h1 class="mercado-h1"data-aos="zoom-in-down">Distintos tipos de mercado</h1>
+  			<div class="container-fluid my-5 main-mercado">
+  				<div class="row row-cols-1 row-cols-md-2 g-4">
+					
+					<div class="col"data-aos="fade-up"
+    						data-aos-anchor-placement="center-bottom">
+						<div class="card h-100">
+							<img src="../img/tipos de mercados1.jpg" class="card-img-top w-100 d-block img-thumbnail" alt="tipos de rentas">
+						  	<div class="card-body mercado__fondo">
+						    	<h5 class="card-title mercado-h3">Tipos de rentas: </h5>
+						    	<p class="card-text main-p-mercado">En renta fija tienes una idea muy aproximada sobre lo que una inversión podría rendir a tu favor, pero esta ganancia usualmente es moderada. En renta variable,  Puede que tus ganancias aumenten mucho en poco tiempo o también ocurra lo contrario.</p>
+						  	</div>
+							<div class="card-footer">
+								<a href="../views/contacto.html" class="btn btn-primary mercado-enviar">Contactenos</a>
+						 	</div>
+						</div>
+					</div>
+					
+					<div class="col"data-aos="fade-up"
+    						data-aos-anchor-placement="center-bottom">
+						<div class="card h-100">
+					  		<img src="../img/tiposdemercados2.jpg" class="card-img-top w-100 d-block img-thumbnail" alt="los mercados se caracterizan por:">
+					  		<div class="card-body">
+					    		<h5 class="card-title mercado-h3">Los mercados se caracterizan por:</h5>
+					    		<p class="card-text main-p-mercado">Desde que se dio origen al mercado siempre se ha caracterizado por componerse de compradores y vendedores que son los representantes de la oferta y demanda, para efectuarse las relaciones comerciales de transacciones de productos o mercancía.</p>
+							</div>
+							<div class="card-footer">
+								<a href="../views/contacto.html" class="btn btn-primary mercado-enviar">Contactenos</a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col"data-aos="fade-up"
+    						data-aos-anchor-placement="center-bottom">
+						<div class="card h-100">
+					  		<img src="../img/img-mercados11.webp" class="card-img-top w-100 d-block img-thumbnail" alt="criptomonedas">
+					  		<div class="card-body">
+					    		<h5 class="card-title mercado-h3">Criptomonedas:</h5>
+					    		<p class="card-text main-p-mercado">Una criptomoneda es un activo digital que emplea un cifrado criptográfico para garantizar su titularidad y asegurar la integridad de las transacciones, y controlar la creación de unidades adicionales, es decir, evitar que alguien pueda hacer copias como haríamos, por ejemplo, con una foto.</p>
+					  		</div>
+					  		<div class="card-footer">
+					    		<a href="../views/contacto.html" class="btn btn-primary mercado-enviar">Contactenos</a>
+			  				</div>
+					  	</div>
+					</div>
+					
+					<div class="col"data-aos="fade-up"
+    						data-aos-anchor-placement="center-bottom">
+						<div class="card h-100">
+					  		<img src="../img/img-mercados12.jpg" class="card-img-top w-100 d-block img-thumbnail" alt="commodities">
+					  		<div class="card-body">
+					    		<h5 class="card-title mercado-h3">Commodities: </h5>
+					    		<p class="card-text main-p-mercado">>La bolsas de materias primas o commodities son mercados en los que se compran y venden productos como maíz, gas natural, petróleo, cuero, tripas de cerdo, oro, etc. Cada producto tiene su propio mercado formado por compradores y vendedores.</p>
+							</div>
+							<div class="card-footer">
+								<a href="../views/contacto.html" class="btn btn-primary mercado-enviar">Contactenos</a>
+							</div>		
+						</div>
+  					</div>
+				
+				</div>
+  			</div>
+  		</section>
+  		  	
+      	</div>		
+      		<div><h2 class="mercado-h1"data-aos="zoom-in-down">Tips a tener en cuenta</h2></div>
+      	</div> 			 	
+		
+        <section class="d-flex justify-content-center align-items-center mb-5"data-aos="flip-left">
         	<div class="card mb-6 mercado-card" style="max-width: 750px;">
 				<div class="row g-0">
 					<div class="col-md-8">
@@ -170,6 +192,19 @@
 
 	<!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- scipt fontawesome -->
+    <script src="https://kit.fontawesome.com/25167accfa.js" crossorigin="anonymous"></script>
+    
+    <!--script animaciones -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+
+    <script>
+      AOS.init({
+        duration: 1250
+      });
+    </script>
 
 </body>
 </html>

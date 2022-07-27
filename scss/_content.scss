@@ -37,7 +37,7 @@
 .mercado-h1{
 	@extend .color;
 	margin: 70px;
-	font-size: 3.5rem;
+	font-size: 3.7rem;
 	@media (max-width:  992px){	
 		font-size: 3.5rem;	
 	}
@@ -49,18 +49,20 @@
 	.mercado-h3{
 		color: $onecolor;
 		text-align: $alicenter;
-		font-size: 1.8rem;
+		font-size: 2.2rem;
 		border:1px double $onecolor;	
 	}
 	.main-p-mercado{
 		color:$maincolor;
 		font-family: $onefont;
-		font-size: 1.5em;
-		margin-top: 10px;	
+		font-size: 1.8rem;
+		margin-top: 15px;	
 	}
 	.mercado-enviar{
 		background: linear-gradient(to right , black,#056D98);
 		color:white ;
+		font-size: 1.1rem;
+		border-radius: 10px;
 		@media (max-width: 991px){
 			font-size:1.5rem;
 			display: flex;
@@ -72,18 +74,6 @@
 			border-radius: 50%;			
 		}			
 	}
-	.mercado-enviar-1{
-		margin-top: 22px;
-	}
-	.mercado-enviar-2{
-		margin-top: 5px ;
-	}
-	.mercado-enviar-3{
-		margin-top: 14px;
-	}
-	.mercado-enviar-4{
-		margin-top:58px;
-	}	
 	@media (max-width:  992px){	
 		.main-p-mercado{
 			font-size: 2.5em;
@@ -149,10 +139,11 @@
 	@include d-flex($space-e,$alicenter);
 	.main-p-nosotros{
 		color:$maincolor;
-		font-size: 1.5em;
+		font-size: 1.8em;
 		margin-top: 10px;	
 		@media (min-width: 768px) and (max-width: 1024px){
 			align-items: center;
+			justify-content: center;
 		}
 	}	
 	#selectores p.sparta:first-letter{
@@ -165,6 +156,9 @@
 	.nosotros-enviar{
 		background: linear-gradient(to right , black,#056D98);
 		color:map-get($map:$mix, $key:"whiteco");
+		margin:auto;
+		font-size: 1.2rem;
+		border-radius: 10px;
 		margin-top: 15px;
 		@media (min-width: 768px) and (max-width: 1024px){
 			margin-top: 30px;	
@@ -181,26 +175,6 @@
 			border: map-get($map:$mix, $key:"na");
 		}	
 	}	
-	.nosotros-enviar-2{
-		background: linear-gradient(to right , black,#056D98);
-		color:map-get($map:$mix, $key:"whiteco");
-		margin-top: 60px;
-		@media (min-width: 768px) and (max-width: 1100px){
-			margin-top: 120px;
-		}
-		@media (max-width: 767px){
-			display: flex;
-			justify-content: center;
-			
-		}
-		&:hover{
-			color:#B0D8E8;
-			background: linear-gradient(#056D98,black);
-			transition: all 1s;
-			border-radius: 50%;
-			border:map-get($map:$mix, $key:"na");
-		}		
-	}		
 }
 .nosotros-h3{
 	font-size: 3.5rem;
