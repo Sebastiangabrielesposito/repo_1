@@ -29,6 +29,7 @@
 		margin-top: 7px;
 	}
 }
+
 //end index
 
 
@@ -127,6 +128,13 @@
 .servicios-dh2{
 	margin-top: 70px;
 }
+
+.servicios_ancho{
+	@media (max-width: 1024px){
+		width:90%;
+	}
+
+}	
 //end servicios
 
 
@@ -180,7 +188,6 @@
 	font-size: 3.5rem;
 	color: $copyrigthcolor;
 	margin-top: 100px;
-	margin-bottom: 90px;
 	text-align: $alicenter;
 	text-decoration: none;
 	animation-name: opacidad;
@@ -190,42 +197,19 @@
 		align-items: $alicenter;
 	}
 }
-.nosotros-metodos{
-	background: rgba(53,103, 123, 0.6);
-	display: flex;
-	justify-content: space-between;
-	margin: 30px;
-	padding: 20px;
-	margin-bottom: 100px;
-	animation-name: opacidad;
-	animation-duration: 7s;
-	@media (max-width: 1024px){
-		justify-content: center;
-		margin: 15px;
-		padding: 5px;
-		margin-bottom: 100px;
-	}
-	.article__metodos{
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		color:map-get($map:$mix, $key:"whiteco");
-	 	font-size: 2.4rem;
-		line-height: 2.5rem;
-		font-weight: 2000;
-	 	list-style: map-get($map:$mix, $key:"na");
-	 	align-items: $alicenter;
-	 	text-align: $alicenter;  	
-		@media (max-width: 1024px){
-			flex-direction: column;
-			color: map-get($map:$mix, $key:"whiteco") ;
-			font-size: 3.5rem;
-			line-height: 6.5rem;
-			margin-top: 15px; 				
-		}
-	}
+
+.slide img {
+	margin: 50px auto 0 ;	
 }
 
+.nosotros_ancho{
+	width: 50%;
+	@media (max-width: 1024px){
+		width:90%;
+	}
+
+}
+	
 //end quienes somos
 
 //contacto
